@@ -8,7 +8,7 @@ const App = () => {
   const [message, setMessage] = useState("Fetching From Api");
 
   useEffect(()=> {
-    fetch('http://10.0.2.2:4000/api/hello')
+    fetch('https://hello-react-native-a0z6.onrender.com/api/hello')
     .then((res)=> res.json())
     .then((data)=> setMessage(data.message))
     .catch(()=> setMessage('Failed to fetch'));
