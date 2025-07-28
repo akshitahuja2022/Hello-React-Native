@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send({
+  res.json({
     activeStatus: true,
     error: false,
   });
